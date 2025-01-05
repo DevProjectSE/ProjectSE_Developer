@@ -7,4 +7,3 @@
   <img src="https://img.shields.io/badge/Team_Project-FF4154?style=for-the-badge&logo=git&logoColor=white"/>
   <img src="https://img.shields.io/badge/Game_Development-4B32C3?style=for-the-badge&logo=gamemaker&logoColor=white"/>
 </p>
-
