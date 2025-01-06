@@ -76,6 +76,3 @@ crashlytics-build.properties
 
 # _External
 /[Aa]ssets/_External/
-
-# ReadMe exception
-/[Aa]ssets/_External/!ReadMe.txt
