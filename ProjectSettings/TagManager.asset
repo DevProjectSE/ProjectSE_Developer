@@ -9,6 +9,7 @@ TagManager:
   - Destroyer
   - MiniWorldCamera
   - Water
+  - Stage2TagSample
   layers:
   - Default
   - TransparentFX
