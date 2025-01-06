@@ -482,7 +482,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   light: {fileID: 574568948}
   lightSource: {fileID: 574568949}
-  targetIntensity: 0.7
+  targetIntensity: 0.5
+  targetAngle: 80
 --- !u!65 &659305657
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -656,7 +657,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   light: {fileID: 574568948}
   lightSource: {fileID: 574568949}
-  targetIntensity: 0.4
+  targetIntensity: 0.2
+  targetAngle: 110
 --- !u!65 &803288923
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1227,7 +1229,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   light: {fileID: 574568948}
   lightSource: {fileID: 574568949}
-  targetIntensity: 0.1
+  targetIntensity: 0
+  targetAngle: 140
 --- !u!65 &1781831317
 BoxCollider:
   m_ObjectHideFlags: 0
