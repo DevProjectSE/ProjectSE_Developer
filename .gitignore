@@ -74,9 +74,8 @@ crashlytics-build.properties
 
 *.vscode
 
-# ReadMe exception
-/[Aa]ssets/_External/!ReadMe.text
-
 # _External
 /[Aa]ssets/_External/
 
+# ReadMe exception
+/[Aa]ssets/_External/!ReadMe.txt
