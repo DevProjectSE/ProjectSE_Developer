@@ -20,6 +20,7 @@ public class FadeInOut : MonoBehaviour
             color.a = 1f; // 완전히 불투명 (1)으로 설정
             fadeInoutImg.color = color;
         }
+        StartCoroutine(FadeIn());
     }
 
     public IEnumerator FadeIn()
@@ -59,17 +60,4 @@ public class FadeInOut : MonoBehaviour
         fadeInoutImg.color = color;
         isFadeOut = false;
     }
-
-    // 디버그용: 키 입력으로 테스트
-   /* void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.F)) // F 키로 FadeOut 시작
-        {
-            StartCoroutine(FadeOut());
-        }
-        if (Input.GetKeyDown(KeyCode.G)) // G 키로 FadeIn 시작
-        {
-            StartCoroutine(FadeIn());
-        }
-    }*/
 }
