@@ -482,6 +482,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   light: {fileID: 574568948}
   lightSource: {fileID: 574568949}
+  targetIntensity: 0.7
 --- !u!65 &659305657
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -655,6 +656,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   light: {fileID: 574568948}
   lightSource: {fileID: 574568949}
+  targetIntensity: 0.4
 --- !u!65 &803288923
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1146,7 +1148,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1351904833967977962, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.499
       objectReference: {fileID: 0}
     - target: {fileID: 1351904833967977962, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1154,7 +1156,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1351904833967977962, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -4.157
       objectReference: {fileID: 0}
     - target: {fileID: 1351904833967977962, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1225,6 +1227,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   light: {fileID: 574568948}
   lightSource: {fileID: 574568949}
+  targetIntensity: 0.1
 --- !u!65 &1781831317
 BoxCollider:
   m_ObjectHideFlags: 0

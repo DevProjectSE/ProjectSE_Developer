@@ -6,14 +6,28 @@ public class BrightnessControl : MonoBehaviour
 {
     public GameObject light;
     public Light lightSource;
+    public float targetIntensity;
+    private float chageSpeed = 1.5f;
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerExit(Collider ohter)
     {
-        if (collision.collider.CompareTag("Player"))
+        if (ohter.CompareTag("Player"))
         {
-            print("Ãæµ¹ÇÔ");
-
+            StartCoroutine(ChangeBrightnessCoroutine());  
         }
     }
 
+    private IEnumerator ChangeBrightnessCoroutine()
+    { 
+        float courrentIntensity = lightSource.intensity; 
+        float elapsedTime = 0f;
+        while(elapsedTime< chageSpeed)
+        {
+            lightSource.intensity = Mathf.Lerp(courrentIntensity,targetIntensity, elapsedTime / chageSpeed);
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+
+        lightSource.intensity = targetIntensity;
+    }
 }
