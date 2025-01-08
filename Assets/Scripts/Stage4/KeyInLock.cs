@@ -30,7 +30,6 @@ public class KeyInLock : MonoBehaviour
                 coll.enabled = false;
                 isActived = true;
             }
-            Debug.Log("삘리리릴");
         }
     }
 }

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5495677619081198870}
   - component: {fileID: 3276918965800448701}
   - component: {fileID: 7667240520879807606}
+  - component: {fileID: 5602803038404463998}
   m_Layer: 6
   m_Name: Bin Lid
   m_TagString: Untagged
@@ -29,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 278912117629643826}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 3.3, z: -1}
+  m_LocalPosition: {x: 0, y: 3.352, z: -1}
   m_LocalScale: {x: 140.96426, y: 140.9642, z: 140.9642}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -132,8 +133,30 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.013, y: 0.013, z: 0.0019339485}
+  m_Size: {x: 0.013, y: 0.013, z: 0.001}
   m_Center: {x: 0, y: 4.656613e-10, z: 0.001}
+--- !u!64 &5602803038404463998
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 278912117629643826}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -1164573101481302506, guid: c890272df5aea24489feba98f0943ec2, type: 3}
 --- !u!1 &1044645376432601390
 GameObject:
   m_ObjectHideFlags: 0
@@ -159,14 +182,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1044645376432601390}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.00000008940697, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1084254549447831324}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1830308719992133534
 MonoBehaviour:
   m_ObjectHideFlags: 0
