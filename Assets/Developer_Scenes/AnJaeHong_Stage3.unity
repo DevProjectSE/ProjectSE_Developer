@@ -7923,7 +7923,6 @@ GameObject:
   - component: {fileID: 8639522064316933330}
   - component: {fileID: 8639522064316933332}
   - component: {fileID: 8639522064316933333}
-  - component: {fileID: 8639522064316933334}
   m_Layer: 7
   m_Name: Flash
   m_TagString: Untagged
@@ -8761,19 +8760,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flashLight: {fileID: 491451475}
-  activateAction: {fileID: 6558622148059887818, guid: c348712bda248c246b8c49b3db54643f, type: 3}
---- !u!114 &8639522064316933334
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7846752671857706266}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62fb9fb1177925e4b8a383be2b9db66c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  leftActivateAction: {fileID: -60998027439631388, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  rightActivateAction: {fileID: -8666952849799569744, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  basicColor: {r: 1, g: 1, b: 1, a: 1}
+  UVColor: {r: 0, g: 0, b: 1, a: 1}
 --- !u!23 &8640649148023687965
 MeshRenderer:
   m_ObjectHideFlags: 0
