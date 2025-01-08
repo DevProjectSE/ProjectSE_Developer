@@ -683,30 +683,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 64412856311357791, guid: d315240adb914ee4aa749f607500de49, type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: -5495902117074765545, guid: 5144e3dd9fa85bd49afbbc9f86236ac0, type: 3}
-    - target: {fileID: 2052988238517605896, guid: d315240adb914ee4aa749f607500de49, type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: -5495902117074765545, guid: 5144e3dd9fa85bd49afbbc9f86236ac0, type: 3}
     - target: {fileID: 3659320831872953994, guid: d315240adb914ee4aa749f607500de49, type: 3}
       propertyPath: m_Name
       value: LockAndKey
       objectReference: {fileID: 0}
-    - target: {fileID: 4972034599826757812, guid: d315240adb914ee4aa749f607500de49, type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: -5495902117074765545, guid: 5144e3dd9fa85bd49afbbc9f86236ac0, type: 3}
-    - target: {fileID: 4973724768012662463, guid: d315240adb914ee4aa749f607500de49, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8994101517909525129, guid: d315240adb914ee4aa749f607500de49, type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: -5495902117074765545, guid: e241c8ad3607442428924dcb901bcfe7, type: 3}
     - target: {fileID: 9032209803766547003, guid: d315240adb914ee4aa749f607500de49, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.001665026
