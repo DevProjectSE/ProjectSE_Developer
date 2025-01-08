@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets;
 
 public class FlashLight : MonoBehaviour
 {
     public GameObject flashLight;
-    private InputActionReference activateAction; 
+    [SerializeField] private InputActionReference activateAction; 
 
     private void Start()
     {
@@ -17,7 +18,7 @@ public class FlashLight : MonoBehaviour
 
     private void OnEnable()
     {
-        if (activateAction != null) ;
+        if (activateAction != null)
         {
             activateAction.action.performed += GetOnLight;
 
@@ -26,7 +27,6 @@ public class FlashLight : MonoBehaviour
 
     private void OnDisable()
     {
-        // 이벤트 연결 해제
         if (activateAction != null)
         {
             activateAction.action.performed -= GetOnLight;
