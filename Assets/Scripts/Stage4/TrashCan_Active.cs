@@ -31,6 +31,7 @@ public class TrashCan_Active : MonoBehaviour
                 handle.GetComponent<Rigidbody>().useGravity = true;
                 handle.GetComponent<Rigidbody>().isKinematic = false;
                 handle.transform.parent = null;
+                xRLever.enabled = false;
                 StopCoroutine(enumerator);
             }
             yield return null;

@@ -7,13 +7,12 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class FlashLight : MonoBehaviour
 {
     public GameObject flashLight;
-    private InputActionReference activateAction; 
+    private InputActionReference activateAction;
 
     private void Start()
     {
         flashLight.SetActive(false);
     }
-
 
     private void OnEnable()
     {
@@ -26,7 +25,7 @@ public class FlashLight : MonoBehaviour
 
     private void OnDisable()
     {
-        // ¿Ã∫•∆Æ ø¨∞· «ÿ¡¶
+        // Ïù¥Î≤§Ìä∏ Ïó∞Í≤∞ Ìï¥Ï†ú
         if (activateAction != null)
         {
             activateAction.action.performed -= GetOnLight;
@@ -34,7 +33,7 @@ public class FlashLight : MonoBehaviour
     }
     private void GetOnLight(InputAction.CallbackContext context)
     {
-        if(flashLight !=null)
+        if (flashLight != null)
         {
             flashLight.SetActive(true);
         }
