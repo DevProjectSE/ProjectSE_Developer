@@ -74,6 +74,7 @@ crashlytics-build.properties
 
 *.vscode
 *.blend
+*.zip
 
 # _External
 /[Aa]ssets/_External/
