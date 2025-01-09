@@ -18,7 +18,7 @@ public class FlashLight : MonoBehaviour
     public Color UVColor = Color.blue;
 
     public GameObject targetObject; //보이게할 대상
-    public float rayDistance = 10f; //거리
+    public float rayDistance = 50f; //거리
 
     private void Start()
     {

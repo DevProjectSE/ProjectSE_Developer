@@ -21,13 +21,14 @@ public class MakeBarrier : MonoBehaviour
 
             StartCoroutine(ChangeBrightnessCoroutine());
 
-            Destroy(gameObject);
+            
         }
     }
 
 
     private IEnumerator ChangeBrightnessCoroutine()
     {
+        print("코루틴 시작됨");
         float courrentIntensity = lightSource.intensity;
         float currentAngleX = lightSource.transform.localRotation.eulerAngles.x;
         float elapsedTime = 0f;
@@ -40,13 +41,15 @@ public class MakeBarrier : MonoBehaviour
             lightSource.intensity = Mathf.Lerp(courrentIntensity, targetIntensity, elapsedTime / chageSpeed);
             float angleDifference = Mathf.DeltaAngle(currentAngleX, targetAngle);
             float newAngle = currentAngleX + angleDifference * (elapsedTime / chageSpeed);
+
             lightSource.transform.rotation = Quaternion.Euler(Mathf.LerpAngle(newAngle, targetAngle, elapsedTime / chageSpeed), 0, 0);
             elapsedTime += Time.deltaTime;
             yield return null;
+
         }
 
         lightSource.intensity = targetIntensity;
         lightSource.transform.rotation = Quaternion.Euler(targetAngle, 0, 0);
-
+        Destroy(gameObject);
     }
 }
