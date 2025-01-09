@@ -17,9 +17,11 @@ public class MakeBarrier : MonoBehaviour
         if (ohter.CompareTag("Player"))
         {
             print("ºÎµúÈû");
-           barrierObj.isTrigger = false;
+            barrierObj.isTrigger = false;
 
             StartCoroutine(ChangeBrightnessCoroutine());
+
+            Destroy(gameObject);
         }
     }
 
