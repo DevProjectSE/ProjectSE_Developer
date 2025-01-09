@@ -14,11 +14,18 @@ public class MoveControllerOverrideTest : MonoBehaviour
     public Transform cam_StartPos;
     public Transform cam_SitPos;
     private bool isSit = false;
+    public Camera camera;
+    XROrigin origin;
+    private void Awake()
+    {
+        origin = GetComponent<XROrigin>();
+    }
 
     private void Start()
     {   //카메라 offset을 제어해서 적용해보려고 했으나
         //카메라의 위치에 따라 CharacterController의 크기가 제어됨.
         // cam_Offset.position = cam_StartPos.position;
+
     }
     private void OnEnable()
     {

@@ -5,16 +5,16 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
-    [Header("½ºÅ×ÀÌÁö Å¬¸®¾î ¿©ºÎ")]
-    [SerializeField, Tooltip("½ºÅ×ÀÌÁö1 Å¬¸®¾î ¿©ºÎ")] private bool isStage1Clear;
-    [SerializeField, Tooltip("½ºÅ×ÀÌÁö2 Å¬¸®¾î ¿©ºÎ")] private bool isStage2Clear;
-    [SerializeField, Tooltip("½ºÅ×ÀÌÁö3 Å¬¸®¾î ¿©ºÎ")] private bool isStage3Clear;
-    [SerializeField, Tooltip("½ºÅ×ÀÌÁö4 Å¬¸®¾î ¿©ºÎ")] private bool isStage4Clear;
-    [SerializeField, Tooltip("½ºÅ×ÀÌÁö5 Å¬¸®¾î ¿©ºÎ")] private bool isStage5Clear;
+    [Header("ìŠ¤í…Œì´ì§€ í´ë¦¬ì–´ ì—¬ë¶€")]
+    [SerializeField, Tooltip("ìŠ¤í…Œì´ì§€1 í´ë¦¬ì–´ ì—¬ë¶€")] private bool isStage1Clear;
+    [SerializeField, Tooltip("ìŠ¤í…Œì´ì§€2 í´ë¦¬ì–´ ì—¬ë¶€")] private bool isStage2Clear;
+    [SerializeField, Tooltip("ìŠ¤í…Œì´ì§€3 í´ë¦¬ì–´ ì—¬ë¶€")] private bool isStage3Clear;
+    [SerializeField, Tooltip("ìŠ¤í…Œì´ì§€4 í´ë¦¬ì–´ ì—¬ë¶€")] private bool isStage4Clear;
+    [SerializeField, Tooltip("ìŠ¤í…Œì´ì§€5 í´ë¦¬ì–´ ì—¬ë¶€")] private bool isStage5Clear;
 
-    [Header("¿£µù ºĞ±âÁ¡")]
-    [SerializeField, Tooltip("ÇØÇÇ¿£µù")] private bool isHappyEnding;
-    [SerializeField, Tooltip("¹èµå¿£µù")] private bool isBadEnding;
+    [Header("ì—”ë”© ë¶„ê¸°ì ")]
+    [SerializeField, Tooltip("í•´í”¼ì—”ë”©")] private bool isHappyEnding;
+    [SerializeField, Tooltip("ë°°ë“œì—”ë”©")] private bool isBadEnding;
 
     private void Awake()
     {
@@ -23,12 +23,12 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }

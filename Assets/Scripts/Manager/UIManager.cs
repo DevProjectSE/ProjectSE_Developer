@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-//ÇÃ·¹ÀÌ¾î È­¸é¿¡ ±¸ÇöµÇ´Â UI, ÆÄ±«µÇÁö¾Ê´Â´Ù.
+//í”Œë ˆì´ì–´ í™”ë©´ì— êµ¬í˜„ë˜ëŠ” UI, íŒŒê´´ë˜ì§€ì•ŠëŠ”ë‹¤.
 public class UIManager : MonoBehaviour
 {
     private FadeInOut fadeInOutObj;
