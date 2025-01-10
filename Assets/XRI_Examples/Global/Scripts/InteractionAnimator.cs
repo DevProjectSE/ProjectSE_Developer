@@ -1,8 +1,5 @@
 using UnityEngine.Playables;
 using UnityEngine.XR.Interaction.Toolkit;
-using UnityEngine.XR.Interaction.Toolkit.Interactors;
-using UnityEngine.XR.Interaction.Toolkit.Interactables;
-using UnityEngine.XR.Interaction.Toolkit.Inputs.Readers;
 
 namespace UnityEngine.XR.Content.Interaction
 {
@@ -17,7 +14,7 @@ namespace UnityEngine.XR.Content.Interaction
         PlayableDirector m_ToAnimate;
 
         bool m_Animating;
-        XRInputButtonReader m_ActivateInputReader;
+        XRBaseController m_Controller;
 
         void Start()
         {
@@ -43,9 +40,9 @@ namespace UnityEngine.XR.Content.Interaction
 
         void Update()
         {
-            if (m_Animating && m_ActivateInputReader != null)
+            if (m_Animating && m_Controller != null)
             {
-                m_ActivateInputReader.TryReadValue(out var floatValue);
+                var floatValue = m_Controller.activateInteractionState.value;
                 m_ToAnimate.time = floatValue;
             }
         }
@@ -53,17 +50,17 @@ namespace UnityEngine.XR.Content.Interaction
         void OnSelect(SelectEnterEventArgs args)
         {
             // Get the controller from the interactor, and then the activation control from there
-            var controllerInteractor = args.interactorObject as XRBaseInputInteractor;
+            var controllerInteractor = args.interactorObject as XRBaseControllerInteractor;
             if (controllerInteractor == null)
             {
-                Debug.LogWarning($"Selected by {args.interactorObject.transform.name}, which is not an XRBaseInputInteractor", this);
+                Debug.LogWarning($"Selected by {args.interactorObject.transform.name}, which is not an XRBaseControllerInteractor", this);
                 return;
             }
 
-            m_ActivateInputReader = controllerInteractor.activateInput;
-            if (m_ActivateInputReader == null)
+            m_Controller = controllerInteractor.xrController;
+            if (m_Controller == null)
             {
-                Debug.LogWarning($"Selected by {controllerInteractor.name}, which does not have a valid XRInputButtonReader for activate input.", this);
+                Debug.LogWarning($"Selected by {controllerInteractor.name}, which does not have a valid XRBaseController", this);
                 return;
             }
 
@@ -76,7 +73,7 @@ namespace UnityEngine.XR.Content.Interaction
         {
             m_Animating = false;
             m_ToAnimate.Stop();
-            m_ActivateInputReader = null;
+            m_Controller = null;
         }
     }
 }

@@ -1,5 +1,5 @@
 using UnityEngine.UI;
-using UnityEngine.XR.Interaction.Toolkit.Interactables;
+using UnityEngine.XR.Interaction.Toolkit;
 
 namespace UnityEngine.XR.Content.Interaction
 {

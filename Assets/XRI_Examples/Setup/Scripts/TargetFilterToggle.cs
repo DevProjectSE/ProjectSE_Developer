@@ -1,7 +1,6 @@
 using UnityEngine.UI;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR.Interaction.Toolkit.Filtering;
-using UnityEngine.XR.Interaction.Toolkit.Interactors;
 
 namespace UnityEngine.XR.Content.Interaction
 {
@@ -14,10 +13,10 @@ namespace UnityEngine.XR.Content.Interaction
         XRTargetFilter m_TargetFilter;
 
         [SerializeField]
-        XRBaseInteractor m_LeftInteractor;
+        XRDirectInteractor m_LeftInteractor;
 
         [SerializeField]
-        XRBaseInteractor m_RightInteractor;
+        XRDirectInteractor m_RightInteractor;
 
         void Start()
         {

@@ -1,5 +1,5 @@
 using System.Collections;
-using UnityEngine.XR.Interaction.Toolkit.Interactors;
+using UnityEngine.XR.Interaction.Toolkit;
 
 namespace UnityEngine.XR.Content.Interaction
 {
