@@ -8,17 +8,17 @@ using UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets;
 public class FlashLight : MonoBehaviour
 {
     public GameObject flashLight;
-    [SerializeField] private InputActionReference leftActivateAction; 
+    [SerializeField] private InputActionReference leftActivateAction;
     [SerializeField] private InputActionReference rightActivateAction;
 
     private int lightState = 0;
 
-    private Light lightComponent; //사용하는 빛
+    private Light lightComponent; //?????? ??
     public Color basicColor = Color.white;
     public Color UVColor = Color.blue;
 
-    public GameObject targetObject; //보이게할 대상
-    public float rayDistance = 50f; //거리
+    public GameObject targetObject; //??????? ???
+    public float rayDistance = 50f; //???
 
     private void Start()
     {
@@ -28,27 +28,26 @@ public class FlashLight : MonoBehaviour
 
     private void Update()
     {
-      
 
         Ray ray = new Ray(flashLight.transform.position, flashLight.transform.forward);
         RaycastHit hit;
 
         if (Physics.Raycast(ray, out hit, rayDistance))
         {
-            // 광선이 오브젝트에 닿았을 경우
+            // ?????? ????????? ????? ???
             if (lightState == 2 && hit.collider.gameObject == targetObject)
             {
-                // 오브젝트를 보이게 한다
+                // ????????? ????? ???
                 targetObject.GetComponent<Renderer>().enabled = true;
             }
         }
         else
         {
-            // 광선이 오브젝트에 닿지 않으면 오브젝트를 숨긴다
+            // ?????? ????????? ???? ?????? ????????? ?????
             targetObject.GetComponent<Renderer>().enabled = false;
         }
-        
-        if (lightState !=2)
+
+        if (lightState != 2)
         {
             targetObject.GetComponent<Renderer>().enabled = false;
         }
@@ -62,7 +61,7 @@ public class FlashLight : MonoBehaviour
             leftActivateAction.action.performed += GetOnLight;
 
         }
-        
+
         if (rightActivateAction != null)
         {
             rightActivateAction.action.performed += GetOnLight;
@@ -83,19 +82,19 @@ public class FlashLight : MonoBehaviour
     }
     private void GetOnLight(InputAction.CallbackContext context)
     {
-        if(lightState==0)
+        if (lightState == 0)
         {
 
             flashLight.SetActive(true);
             lightComponent.color = basicColor;
             lightState = 1;
         }
-        else if(lightState==1)
+        else if (lightState == 1)
         {
             lightComponent.color = UVColor;
             lightState = 2;
         }
-        else if(lightState==2)
+        else if (lightState == 2)
         {
             flashLight.SetActive(false);
             lightState = 0;
